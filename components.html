@@ -36,27 +36,287 @@
         </div>
     </header>
 
-    <div id="ezo-features" class="container home-line">
+    <div id="page-title" class="container">
+        <h1>Components</h1>
+    </div>
+    <div id="grid-demo" class="container">
+        <h2>Grid</h2>
         <div class="row">
-            <div class="four columns one-feature">
-                <div class="icon">
-                    <img class="icon icons8-Multiple-Devices" width="80" height="80" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAEKklEQVR4Xu2bTVYTQRCAuyE+3IknEBbJOpjswROIJwA3QlbKCYATwC7BjXAC8QTinkjWGd+LngDcyTPQVgPDyxvnp3qqppNJKpskb6qqq76urunp7tFKPiQCmqQtykoAEpNAAApAIgGiumSgACQSIKpLBgpAIgGiumSgACQSIKqjM7DeHizN6+GBUqaulV4itjuR6kaZn0rp3o2p7PRay/A7+4MC+ADvAoQXs02WX8IodQUQVzAQUQAbneAUBF8ro74Nn1bWe2+Xr8qP6f8I6p8Gi5U/w1N4wF0FiF+629X1rDixAC9t9g0XKs+nFV4I6g7i9fDSDufudm2ZBWCzE0CHKHW+XUUBz2p00q+7xIsC4mJw0uFg/HOJlwSw2elf3GdmbcV+l/1/CNcbwEan37ONQq2o2++y//cOEDMcyijjLQPLCAfjszeA0ZqHcW6SZJL89wYwWvMmCQ7GlyT/vQHEOFlGGQFI7DVvAKUGwtoNprOSekRqIBEgBn4ZZbwN4SLgNI+CXWPMZtGLtna1RWt9fL5V3Y/G4Q0gdw1sdH4camXeF9ExiTaN2j9vVfdGr3sDyF0DYeH2ft1xzqz03tXunrOL+tQ/9uuVW30Rt+7nDSB3cC6Oc7Sd1J6LH6S7MEcQeYcOR9tjB8hdA116fioActfAmQPIkQUzPYQFIPFJRGogEaDUQCJAGcICMPbAgMtsgDSRTquB1EWBtId9rswf+0Q6qQayLgrEPOxPDcCkQDgWBdIe9qceoEsNSYPBZSepjbEPYY591ZkGyLGvOtMAXYeGa+2a+iEsAB0n0tgjvlyZw2XHpaPtgfqKHg5ghv0bzkhnHqpHTaQb7f4x7GBtgCNnAPFN1jlprsC57GABPpyP/gzya7AzeNJt1Tazyk4swNDxLOWs69Qz1b4AZsURXo+LRwBi6YGcM8C8GcSVOVx2sEM4j1xqBmJvGtGGuQLnspMHTKgT3lTsf3wGtoMz+7bOrVY737eqhw5ZfifKFTiXHQrAl0fBhzmjDpLeXIrPwHawBgC/2nfG4OXCvZuFJydZd95RJ7kC57KTB6C9I89f/92AMzr3CWTUKzgCcha1lTiNabaDPYC465p9o/J5a2howxfAzBhTltRS54EAcQ2MW5CrmY3ECJQeILxcaeOPy7wwXNRE2hUeV+Zw2ckzhLExC8CEu+tMAcy7P82R4VORgXn3pwUgdpwlyAlAAsDHTSujfnVb1aW8pkoxhPMGh9IjbpuODSCm8HMtq8WBNJB5EPxx9IA5CvqI0NgAYgo/R41yBeIqPzaAGEdnFiCcTLiCnnlGeV2Bq8hjOooiU0wGMixEPAZFLPIUOBjdQgDahu1qDiyHbWqtXmAcicpwFfk8bbvoFAbQxYkyywpAYu8JQAFIJEBUlwwUgEQCRHXJQAFIJEBU/wcm/T2NTh3TpgAAAABJRU5ErkJggg==">
-                </div>
-                <h4>Responsive</h4>
-            </div>
-            <div class="four columns one-feature">
-                <div class="icon">
-                    <img class="icon icons8-Source-Code-Filled" width="80" height="80" src="data:image/png;base64,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">
-                </div>
-                <h4>Built with Less</h4>
-            </div>
-            <div class="four columns one-feature">
-                <div class="icon">
-                    <img class="icon icons8-Open-Source" width="80" height="80" src="data:image/png;base64,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">
+            <div class="one column">One</div>
+            <div class="eleven columns">Eleven</div>
+        </div>
 
-                </div>
-                <h4>Open source</h4>
+        <div class="row">
+            <div class="two columns">Two</div>
+            <div class="ten columns">Ten</div>
+        </div>
+
+        <div class="row">
+            <div class="three columns">Three</div>
+            <div class="four columns">Four</div>
+            <div class="five columns">Five</div>
+        </div>
+
+        <div class="row">
+            <div class="one-third column">1/3</div>
+            <div class="two-thirds column">2/3</div>
+        </div>
+
+        <div class="row">
+            <div class="one-half column">1/2</div>
+            <div class="one-half column">1/2</div>
+        </div>
+    </div>
+
+    <div id="typography-demo" class="container">
+        <hr />
+        <h2>Typography</h2>
+        <div class="row">
+            <div class="one-half column">
+                <h1>Title 1</h1>
+                <h2>Title 2</h2>
+                <h3>Title 3</h3>
+                <h4>Title 4</h4>
+                <h5>Title 5</h5>
+                <h6>Title 6</h6>
             </div>
+            <div class="one-half column">
+                <p><b>This is a paragraph.</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto blanditiis, explicabo cum nobis voluptate doloremque iste perspiciatis aperiam commodi quis dignissimos esse consequuntur, asperiores sed quo nulla
+                    eveniet alias dolorum molestias qui! Dolorem, nemo, ullam!</p>
+                <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+                <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                <p><u>This line of text will render as underlined</u></p>
+                <p><small>This line of text is meant to be treated as fine print.</small></p>
+                <p><strong>This line rendered as bold text.</strong></p>
+                <p><em>This line rendered as italicized text.</em></p>
+            </div>
+        </div>
+    </div>
+    <div id="button-demo" class="container">
+        <hr>
+        <h2>Buttons</h2>
+        <div class="row">
+            <!-- Standard buttons -->
+            <button class="button">Button element</button>
+            <button class="button-primary">Button element</button>
+        </div>
+    </div>
+
+    <div id="form-demo" class="container">
+        <hr>
+        <h2>Fomrs</h2>
+
+        <form>
+            <div class="row">
+                <div class="six columns">
+                    <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                    <input class="u-full-width" type="text" value="Artisanal kale" id="example-text-input">
+                </div>
+                <div class="six columns">
+                    <label for="exampleTextarea">Example textarea</label>
+                    <textarea class="u-full-width" id="exampleTextarea" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="exampleSelect1">Example select</label>
+                    <select class="u-full-width" id="exampleSelect1">
+            				<option>1</option>
+            				<option>2</option>
+            				<option>3</option>
+            				<option>4</option>
+            				<option>5</option>
+            			</select>
+                </div>
+                <div class="six columns">
+                    <label for="exampleSelect2">Example multiple select</label>
+                    <select multiple class="u-full-width" id="exampleSelect2">
+            				<option>1</option>
+            				<option>2</option>
+            				<option>3</option>
+            				<option>4</option>
+            				<option>5</option>
+            			</select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" class="u-full-width" id="exampleInputFile" aria-describedby="fileHelp">
+                    <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+                </div>
+                <div class="six columns">
+                    <legend>Radio buttons</legend>
+                    <div class="form-check">
+                        <label>
+                    			<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    			Option one is this and that&mdash;be sure to include why it's great
+                    		</label>
+                    </div>
+                    <div class="form-check">
+                        <label>
+                    			<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    			Option two can be something else and selecting it will deselect option one
+                    		</label>
+                    </div>
+                    <div class="form-check disabled">
+                        <label>
+                    			<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                    			Option three is disabled
+                    		</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="example-search-input" class="col-2 col-form-label">Search</label>
+                    <input class="u-full-width" type="search" value="How do I shoot web" id="example-search-input">
+                </div>
+                <div class="six columns">
+                    <label for="example-email-input" class="col-2 col-form-label">Email</label>
+                    <input class="u-full-width" type="email" value="bootstrap@example.com" id="example-email-input">
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="example-url-input" class="col-2 col-form-label">URL</label>
+                    <input class="u-full-width" type="url" value="https://getbootstrap.com" id="example-url-input">
+                </div>
+                <div class="six columns">
+                    <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
+                    <input class="u-full-width" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="example-password-input" class="col-2 col-form-label">Password</label>
+                    <input class="u-full-width" type="password" value="hunter2" id="example-password-input">
+                </div>
+                <div class="six columns">
+                    <label for="example-number-input" class="col-2 col-form-label">Number</label>
+                    <input class="u-full-width" type="number" value="42" id="example-number-input">
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="example-datetime-local-input" class="col-2 col-form-label">Date and time</label>
+                    <input class="u-full-width" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                </div>
+                <div class="six columns">
+                    <label for="example-date-input" class="col-2 col-form-label">Date</label>
+                    <input class="u-full-width" type="date" value="2011-08-19" id="example-date-input">
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="example-month-input" class="col-2 col-form-label">Month</label>
+                    <input class="u-full-width" type="month" value="2011-08" id="example-month-input">
+                </div>
+                <div class="six columns">
+                    <label for="example-week-input" class="col-2 col-form-label">Week</label>
+                    <input class="u-full-width" type="week" value="2011-W33" id="example-week-input">
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="example-time-input" class="col-2 col-form-label">Time</label>
+                    <input class="u-full-width" type="time" value="13:45:00" id="example-time-input">
+                </div>
+                <div class="six columns">
+                    <label for="example-color-input" class="col-2 col-form-label">Color</label>
+                    <input class="u-full-width" type="color" value="#563d7c" id="example-color-input">
+                </div>
+            </div>
+        </form>
+
+    </div>
+    </div>
+    <div id="lists-demo" class="container">
+        <hr>
+        <h2>Lists</h2>
+        <div class="row">
+            <div class="six columns">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetur adipiscing elit</li>
+                    <li>Integer molestie lorem at massa</li>
+                    <li>Facilisis in pretium nisl aliquet</li>
+                    <li>Nulla volutpat aliquam velit
+                        <ul>
+                            <li>Phasellus iaculis neque</li>
+                            <li>Purus sodales ultricies</li>
+                            <li>Vestibulum laoreet porttitor sem</li>
+                            <li>Ac tristique libero volutpat at</li>
+                        </ul>
+                    </li>
+                    <li>Faucibus porta lacus fringilla vel</li>
+                    <li>Aenean sit amet erat nunc</li>
+                    <li>Eget porttitor lorem</li>
+                </ul>
+            </div>
+            <div class="six columns">
+                <ol>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetur adipiscing elit</li>
+                    <li>Integer molestie lorem at massa</li>
+                    <li>Facilisis in pretium nisl aliquet</li>
+                    <li>Nulla volutpat aliquam velit
+                        <ul>
+                            <li>Phasellus iaculis neque</li>
+                            <li>Purus sodales ultricies</li>
+                            <li>Vestibulum laoreet porttitor sem</li>
+                            <li>Ac tristique libero volutpat at</li>
+                        </ul>
+                    </li>
+                    <li>Faucibus porta lacus fringilla vel</li>
+                    <li>Aenean sit amet erat nunc</li>
+                    <li>Eget porttitor lorem</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div id="precode-demo" class="container">
+        <hr>
+        <h2>Code</h2>
+        <div class="row">
+            <pre><code>
+.some-class {
+    background-color: red;
+}
+            </code></pre>
+        </div>
+    </div>
+    <div id="tabel-demo" class="container">
+        <hr>
+        <h2>Table</h2>
+        <div class="row">
+            <table class="u-full-width">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Sex</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dave Gamache</td>
+                        <td>26</td>
+                        <td>Male</td>
+                        <td>San Francisco</td>
+                    </tr>
+                    <tr>
+                        <td>Dwayne Johnson</td>
+                        <td>42</td>
+                        <td>Male</td>
+                        <td>Hayward</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     <footer>

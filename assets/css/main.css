@@ -1,0 +1,65 @@
+/**
+ * EzoCSS - project site
+ *
+ * Authors : Dezodev
+ */
+/* General
+ ** ------------------------ */
+body {
+  background: #F7F7F7;
+  color: #333;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin: 0;
+}
+/* Header
+** ------------------------ */
+header {
+  background: #424242;
+  color: #FFF;
+  padding: 20px 15px;
+  margin-bottom: 50px;
+}
+header .button {
+  color: #fff;
+}
+header #site-first #site-name a {
+  color: #fff;
+  text-decoration: none;
+}
+header #site-icon {
+  text-align: right;
+}
+/* Components
+** ------------------------ */
+#grid-demo .column,
+#grid-demo .columns {
+  text-align: center;
+  background: #DDD;
+  border-radius: 2px;
+}
+#grid-demo .row {
+  margin-bottom: 5px;
+}
+/* Pages
+** ------------------------ */
+/* Home */
+.home-line {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#ezo-features .one-feature .icon,
+#ezo-features .one-feature h4 {
+  text-align: center;
+}
+/* Footer
+** ------------------------ */
+footer {
+  margin-top: 50px;
+  background: #424242;
+  color: #E0E0E0;
+  padding: 10px 0;
+}
+footer p {
+  margin-bottom: 0;
+}
