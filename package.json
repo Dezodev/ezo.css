@@ -1,0 +1,28 @@
+{
+  "name": "ezocss",
+  "version": "0.0.1",
+  "description": "HTML & CSS framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dezodev/ezocss.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "framework"
+  ],
+  "author": "Dezodev",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Dezodev/ezocss/issues"
+  },
+  "homepage": "https://dezodev.github.io/ezocss/",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0"
+  }
+}

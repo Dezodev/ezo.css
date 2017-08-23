@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/ezo.css">
+
+    <title>EzoCSS Trystyle</title>
+
+    <style media="screen">
+        #grid-demo .column,
+        #grid-demo .columns {
+            text-align: center;
+            background: #DDD;
+            border-radius: 2px;
+        }
+
+        #grid-demo .row {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="grid-demo" class="container">
+        <h2>Grid</h2>
+        <div class="row">
+            <div class="one column">One</div>
+            <div class="eleven columns">Eleven</div>
+        </div>
+
+        <div class="row">
+            <div class="two columns">Two</div>
+            <div class="ten columns">Ten</div>
+        </div>
+
+        <div class="row">
+            <div class="three columns">Three</div>
+            <div class="four columns">Four</div>
+            <div class="five columns">Five</div>
+        </div>
+
+        <div class="row">
+            <div class="one-third column">1/3</div>
+            <div class="two-thirds column">2/3</div>
+        </div>
+
+        <div class="row">
+            <div class="one-half column">1/2</div>
+            <div class="one-half column">1/2</div>
+        </div>
+    </div>
+
+    <div id="typography-demo" class="container">
+        <hr />
+        <h2>Typography</h2>
+        <div class="row">
+            <div class="one-half column">
+                <h1>Title 1</h1>
+                <h2>Title 2</h2>
+                <h3>Title 3</h3>
+                <h4>Title 4</h4>
+                <h5>Title 5</h5>
+                <h6>Title 6</h6>
+            </div>
+            <div class="one-half column">
+                <p><b>This is a paragraph.</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto blanditiis, explicabo cum nobis voluptate doloremque iste perspiciatis aperiam commodi quis dignissimos esse consequuntur, asperiores sed quo nulla
+                    eveniet alias dolorum molestias qui! Dolorem, nemo, ullam!</p>
+                <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+                <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                <p><u>This line of text will render as underlined</u></p>
+                <p><small>This line of text is meant to be treated as fine print.</small></p>
+                <p><strong>This line rendered as bold text.</strong></p>
+                <p><em>This line rendered as italicized text.</em></p>
+            </div>
+        </div>
+    </div>
+    <div id="button-demo" class="container">
+        <hr>
+        <h2>Buttons</h2>
+        <div class="row">
+            <!-- Standard buttons -->
+            <button class="button">Button element</button>
+            <button class="button-primary">Button element</button>
+        </div>
+    </div>
+
+    <div id="form-demo" class="container">
+        <hr>
+        <h2>Fomrs</h2>
+
+        <form>
+            <div class="row">
+                <div class="six columns">
+                    <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                    <input class="u-full-width" type="text" value="Artisanal kale" id="example-text-input">
+                </div>
+                <div class="six columns">
+                    <label for="exampleTextarea">Example textarea</label>
+                    <textarea class="u-full-width" id="exampleTextarea" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="exampleSelect1">Example select</label>
+                    <select class="u-full-width" id="exampleSelect1">
+            				<option>1</option>
+            				<option>2</option>
+            				<option>3</option>
+            				<option>4</option>
+            				<option>5</option>
+            			</select>
+                </div>
+                <div class="six columns">
+                    <label for="exampleSelect2">Example multiple select</label>
+                    <select multiple class="u-full-width" id="exampleSelect2">
+            				<option>1</option>
+            				<option>2</option>
+            				<option>3</option>
+            				<option>4</option>
+            				<option>5</option>
+            			</select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" class="u-full-width" id="exampleInputFile" aria-describedby="fileHelp">
+                    <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+                </div>
+                <div class="six columns">
+                    <legend>Radio buttons</legend>
+                    <div class="form-check">
+                        <label>
+                    			<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    			Option one is this and that&mdash;be sure to include why it's great
+                    		</label>
+                    </div>
+                    <div class="form-check">
+                        <label>
+                    			<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    			Option two can be something else and selecting it will deselect option one
+                    		</label>
+                    </div>
+                    <div class="form-check disabled">
+                        <label>
+                    			<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                    			Option three is disabled
+                    		</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="example-search-input" class="col-2 col-form-label">Search</label>
+                    <input class="u-full-width" type="search" value="How do I shoot web" id="example-search-input">
+                </div>
+                <div class="six columns">
+                    <label for="example-email-input" class="col-2 col-form-label">Email</label>
+                    <input class="u-full-width" type="email" value="bootstrap@example.com" id="example-email-input">
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="example-url-input" class="col-2 col-form-label">URL</label>
+                    <input class="u-full-width" type="url" value="https://getbootstrap.com" id="example-url-input">
+                </div>
+                <div class="six columns">
+                    <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
+                    <input class="u-full-width" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="example-password-input" class="col-2 col-form-label">Password</label>
+                    <input class="u-full-width" type="password" value="hunter2" id="example-password-input">
+                </div>
+                <div class="six columns">
+                    <label for="example-number-input" class="col-2 col-form-label">Number</label>
+                    <input class="u-full-width" type="number" value="42" id="example-number-input">
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="example-datetime-local-input" class="col-2 col-form-label">Date and time</label>
+                    <input class="u-full-width" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                </div>
+                <div class="six columns">
+                    <label for="example-date-input" class="col-2 col-form-label">Date</label>
+                    <input class="u-full-width" type="date" value="2011-08-19" id="example-date-input">
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="example-month-input" class="col-2 col-form-label">Month</label>
+                    <input class="u-full-width" type="month" value="2011-08" id="example-month-input">
+                </div>
+                <div class="six columns">
+                    <label for="example-week-input" class="col-2 col-form-label">Week</label>
+                    <input class="u-full-width" type="week" value="2011-W33" id="example-week-input">
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="example-time-input" class="col-2 col-form-label">Time</label>
+                    <input class="u-full-width" type="time" value="13:45:00" id="example-time-input">
+                </div>
+                <div class="six columns">
+                    <label for="example-color-input" class="col-2 col-form-label">Color</label>
+                    <input class="u-full-width" type="color" value="#563d7c" id="example-color-input">
+                </div>
+            </div>
+        </form>
+
+    </div>
+    </div>
+    <div id="lists-demo" class="container">
+        <hr>
+        <h2>Lists</h2>
+        <div class="row">
+            <div class="six columns">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetur adipiscing elit</li>
+                    <li>Integer molestie lorem at massa</li>
+                    <li>Facilisis in pretium nisl aliquet</li>
+                    <li>Nulla volutpat aliquam velit
+                        <ul>
+                            <li>Phasellus iaculis neque</li>
+                            <li>Purus sodales ultricies</li>
+                            <li>Vestibulum laoreet porttitor sem</li>
+                            <li>Ac tristique libero volutpat at</li>
+                        </ul>
+                    </li>
+                    <li>Faucibus porta lacus fringilla vel</li>
+                    <li>Aenean sit amet erat nunc</li>
+                    <li>Eget porttitor lorem</li>
+                </ul>
+            </div>
+            <div class="six columns">
+                <ol>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetur adipiscing elit</li>
+                    <li>Integer molestie lorem at massa</li>
+                    <li>Facilisis in pretium nisl aliquet</li>
+                    <li>Nulla volutpat aliquam velit
+                        <ul>
+                            <li>Phasellus iaculis neque</li>
+                            <li>Purus sodales ultricies</li>
+                            <li>Vestibulum laoreet porttitor sem</li>
+                            <li>Ac tristique libero volutpat at</li>
+                        </ul>
+                    </li>
+                    <li>Faucibus porta lacus fringilla vel</li>
+                    <li>Aenean sit amet erat nunc</li>
+                    <li>Eget porttitor lorem</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div id="precode-demo" class="container">
+        <hr>
+        <h2>Code</h2>
+        <div class="row">
+            <pre><code>
+.some-class {
+    background-color: red;
+}
+            </code></pre>
+        </div>
+    </div>
+    <div id="tabel-demo" class="container">
+        <hr>
+        <h2>Table</h2>
+        <div class="row">
+            <table class="u-full-width">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Sex</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dave Gamache</td>
+                        <td>26</td>
+                        <td>Male</td>
+                        <td>San Francisco</td>
+                    </tr>
+                    <tr>
+                        <td>Dwayne Johnson</td>
+                        <td>42</td>
+                        <td>Male</td>
+                        <td>Hayward</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- #button-demo.container>hr+h2{Buttons}+.row -->
+
+</body>
+
+</html>
