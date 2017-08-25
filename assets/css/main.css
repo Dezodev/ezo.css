@@ -32,8 +32,23 @@ header #site-icon {
 }
 /* Components
 ** ------------------------ */
-#grid-demo .column,
-#grid-demo .columns {
+#grid-demo .ezo-col-1,
+#grid-demo .ezo-col-2,
+#grid-demo .ezo-col-3,
+#grid-demo .ezo-col-4,
+#grid-demo .ezo-col-5,
+#grid-demo .ezo-col-6,
+#grid-demo .ezo-col-7,
+#grid-demo .ezo-col-8,
+#grid-demo .ezo-col-9,
+#grid-demo .ezo-col-10,
+#grid-demo .ezo-col-11,
+#grid-demo .ezo-col-12,
+#grid-demo .ezo-col-1-3,
+#grid-demo .ezo-col-2-3,
+#grid-demo .ezo-col-3-3,
+#grid-demo .ezo-col-1-2,
+#grid-demo .ezo-col-2-2 {
   text-align: center;
   background: #DDD;
   border-radius: 2px;
