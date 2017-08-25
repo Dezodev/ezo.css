@@ -4,28 +4,35 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // Breakpoints
-@bp-larger-than-mobile    : 425px;
-@bp-larger-than-phablet   : 550px;
-@bp-larger-than-tablet    : 768px;
-@bp-larger-than-desktop   : 1024px;
-@bp-larger-than-desktophd : 1200px;
+@bp-mb    : 425px;     //mb : mobile
+@bp-sm    : 550px;     //sm : smartphone
+@bp-tb    : 768px;     //tb : tablet
+@bp-md    : 1024px;    //md : desktop
+@bp-lg    : 1200px;    //lg : desktop HD
 
 // Colors
-@light-grey: #e1e1e1;
-@dark-grey: #444;
-@primary-color: #33c3f0;
-@secondary-color: lighten(@dark-grey, 13.5%);
 @border-color: #bbb;
 @link-color: #1eaedb;
 @font-color: #333;
+
+@light-grey: #e1e1e1;
+@dark-grey: #444;
+@primary-color: #33c3f0;
+@secondary-color: darken(@primary-color, 20%);
+@sucess-color : #3c763d;
+@info-color : #31708f;
+@warning-color : #8a6d3b;
+@danger-color : #a94442;
 
 // Typography
 @font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Grid Variables
 @container-width: 1170px;
-@container-width-larger-than-mobile: 85%;
-@container-width-larger-than-phablet: 80%;
+@container-width-mb: 100%;
+@container-width-sm: 85%;
+@container-width-tb: 750px;
+@container-width-md: 970px;
 @total-columns: 12;
 @column-width: 100 / @total-columns; // calculates individual column width based off of # of columns
 @column-margin: 2%; // space between columns

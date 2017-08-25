@@ -2,7 +2,6 @@
 
 .container {
     position: relative;
-    width: 100%;
     width: @container-width;
     margin: 0 auto;
     padding: 0 15px;
@@ -17,18 +16,9 @@
     box-sizing: border-box;
 }
 
-/* For devices larger than 400px */
-@media (min-width: @bp-larger-than-mobile) and (max-width: @bp-larger-than-phablet) {
-    .container {
-        width: @container-width-larger-than-mobile;
-    }
-}
 
-/* For devices larger than 550px */
-@media (min-width: @bp-larger-than-phablet) {
-    .container {
-        width: @container-width-larger-than-phablet;
-    }
+/* For devices larger than 1024px */
+@media (min-width: @bp-tb) {
 
     .ezo-col-1, .ezo-col-2, .ezo-col-3, .ezo-col-4, .ezo-col-5, .ezo-col-6,
     .ezo-col-7, .ezo-col-8, .ezo-col-9, .ezo-col-10, .ezo-col-11, .ezo-col-12,
@@ -181,5 +171,34 @@
         &:first-child {
             .grid-offset-length-first-child(11);
         }
+    }
+}
+
+
+/* For devices less than 1200px */
+@media (max-width: @bp-md) {
+    .container {
+        width: @container-width-md;
+    }
+}
+
+/* For devices less than 1024px */
+@media (max-width: @bp-tb) {
+    .container {
+        width: @container-width-tb;
+    }
+}
+
+/* For devices less than 550px */
+@media (max-width: @bp-sm) {
+    .container {
+        width: @container-width-sm;
+    }
+}
+
+/* For devices less than 425px */
+@media (max-width: @bp-mb) {
+    .container {
+        width: @container-width-mb;
     }
 }
