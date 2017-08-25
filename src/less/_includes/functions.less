@@ -1,9 +1,15 @@
+// main: ../ezo.less
+
 // Functions
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 .grid-column-width(@n) {
-  width: @column-width * @n - (@column-margin*(@total-columns - @n)/@total-columns);
+    width: @column-width * @n - (@column-margin*(@total-columns - @n)/@total-columns);
 }
 
 .grid-offset-length(@n) {
-  margin-left: @column-width * @n - (@column-margin*(@total-columns - @n)/@total-columns) + @column-margin;
+    margin-left: @column-width * @n - (@column-margin*(@total-columns - @n)/@total-columns) + (@column-margin * 2);
+}
+
+.grid-offset-length-first-child(@n) {
+    margin-left: @column-width * @n - (@column-margin*(@total-columns - @n)/@total-columns) + @column-margin;
 }

@@ -26,22 +26,36 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  width: 1170px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
   box-sizing: border-box;
 }
-.column,
-.columns {
+.ezo-col-1,
+.ezo-col-2,
+.ezo-col-3,
+.ezo-col-4,
+.ezo-col-5,
+.ezo-col-6,
+.ezo-col-7,
+.ezo-col-8,
+.ezo-col-9,
+.ezo-col-10,
+.ezo-col-11,
+.ezo-col-12,
+.ezo-col-1-3,
+.ezo-col-2-3,
+.ezo-col-3-3,
+.ezo-col-1-2,
+.ezo-col-2-2 {
   width: 100%;
   float: left;
   box-sizing: border-box;
 }
 /* For devices larger than 400px */
-@media (min-width: 400px) {
+@media (min-width: 425px) and (max-width: 550px) {
   .container {
     width: 85%;
-    padding: 0;
   }
 }
 /* For devices larger than 550px */
@@ -49,117 +63,164 @@
   .container {
     width: 80%;
   }
-  .column,
-  .columns {
+  .ezo-col-1,
+  .ezo-col-2,
+  .ezo-col-3,
+  .ezo-col-4,
+  .ezo-col-5,
+  .ezo-col-6,
+  .ezo-col-7,
+  .ezo-col-8,
+  .ezo-col-9,
+  .ezo-col-10,
+  .ezo-col-11,
+  .ezo-col-12,
+  .ezo-col-1-3,
+  .ezo-col-2-3,
+  .ezo-col-3-3,
+  .ezo-col-1-2,
+  .ezo-col-2-2 {
     margin-left: 2%;
   }
-  .column:first-child,
-  .columns:first-child {
+  .ezo-col-1:first-child,
+  .ezo-col-2:first-child,
+  .ezo-col-3:first-child,
+  .ezo-col-4:first-child,
+  .ezo-col-5:first-child,
+  .ezo-col-6:first-child,
+  .ezo-col-7:first-child,
+  .ezo-col-8:first-child,
+  .ezo-col-9:first-child,
+  .ezo-col-10:first-child,
+  .ezo-col-11:first-child,
+  .ezo-col-12:first-child,
+  .ezo-col-1-3:first-child,
+  .ezo-col-2-3:first-child,
+  .ezo-col-3-3:first-child,
+  .ezo-col-1-2:first-child,
+  .ezo-col-2-2:first-child {
     margin-left: 0;
   }
-  .one.column,
-  .one.columns {
+  .ezo-col-1 {
     width: 6.5%;
   }
-  .two.columns {
+  .ezo-col-2 {
     width: 15%;
   }
-  .three.columns {
+  .ezo-col-3 {
     width: 23.5%;
   }
-  .four.columns {
+  .ezo-col-4 {
     width: 32%;
   }
-  .five.columns {
+  .ezo-col-5 {
     width: 40.5%;
   }
-  .six.columns {
+  .ezo-col-6 {
     width: 49%;
   }
-  .seven.columns {
+  .ezo-col-7 {
     width: 57.5%;
   }
-  .eight.columns {
+  .ezo-col-8 {
     width: 66%;
   }
-  .nine.columns {
+  .ezo-col-9 {
     width: 74.5%;
   }
-  .ten.columns {
+  .ezo-col-10 {
     width: 83%;
   }
-  .eleven.columns {
+  .ezo-col-11 {
     width: 91.5%;
   }
-  .twelve.columns {
+  .ezo-col-12,
+  .ezo-col-2-2,
+  .ezo-col-3-3 {
     width: 100%;
     margin-left: 0;
   }
-  .one-third.column {
+  .ezo-col-1-3 {
     width: 32%;
   }
-  .two-thirds.column {
+  .ezo-col-2-3 {
     width: 66%;
   }
-  .one-half.column {
+  .ezo-col-1-2 {
     width: 49%;
   }
   /* Offsets */
-  .offset-by-one.column,
-  .offset-by-one.columns {
+  .ezo-col-o-1 {
+    margin-left: 10.5%;
+  }
+  .ezo-col-o-1:first-child {
     margin-left: 8.5%;
   }
-  .offset-by-two.column,
-  .offset-by-two.columns {
+  .ezo-col-o-2 {
+    margin-left: 19%;
+  }
+  .ezo-col-o-2:first-child {
     margin-left: 17%;
   }
-  .offset-by-three.column,
-  .offset-by-three.columns {
+  .ezo-col-o-3 {
+    margin-left: 27.5%;
+  }
+  .ezo-col-o-3:first-child {
     margin-left: 25.5%;
   }
-  .offset-by-four.column,
-  .offset-by-four.columns {
+  .ezo-col-o-4,
+  .ezo-col-o-1-3 {
+    margin-left: 36%;
+  }
+  .ezo-col-o-4:first-child,
+  .ezo-col-o-1-3:first-child {
     margin-left: 34%;
   }
-  .offset-by-five.column,
-  .offset-by-five.columns {
+  .ezo-col-o-5 {
+    margin-left: 44.5%;
+  }
+  .ezo-col-o-5:first-child {
     margin-left: 42.5%;
   }
-  .offset-by-six.column,
-  .offset-by-six.columns {
+  .ezo-col-o-6,
+  .ezo-col-o-1-2 {
+    margin-left: 53%;
+  }
+  .ezo-col-o-6:first-child,
+  .ezo-col-o-1-2:first-child {
     margin-left: 51%;
   }
-  .offset-by-seven.column,
-  .offset-by-seven.columns {
+  .ezo-col-o-7 {
+    margin-left: 61.5%;
+  }
+  .ezo-col-o-7:first-child {
     margin-left: 59.5%;
   }
-  .offset-by-eight.column,
-  .offset-by-eight.columns {
+  .ezo-col-o-8,
+  .ezo-col-o-2-3 {
+    margin-left: 70%;
+  }
+  .ezo-col-o-8:first-child,
+  .ezo-col-o-2-3:first-child {
     margin-left: 68%;
   }
-  .offset-by-nine.column,
-  .offset-by-nine.columns {
+  .ezo-col-o-9 {
+    margin-left: 78.5%;
+  }
+  .ezo-col-o-9:first-child {
     margin-left: 76.5%;
   }
-  .offset-by-ten.column,
-  .offset-by-ten.columns {
+  .ezo-col-o-10 {
+    margin-left: 87%;
+  }
+  .ezo-col-o-10:first-child {
     margin-left: 85%;
   }
-  .offset-by-eleven.column,
-  .offset-by-eleven.columns {
+  .ezo-col-o-11 {
+    margin-left: 95.5%;
+  }
+  .ezo-col-o-11:first-child {
     margin-left: 93.5%;
-  }
-  .offset-by-one-third.column,
-  .offset-by-one-third.columns {
-    margin-left: 34%;
-  }
-  .offset-by-two-thirds.column,
-  .offset-by-two-thirds.columns {
-    margin-left: 68%;
-  }
-  .offset-by-one-half.column,
-  .offset-by-one-half.column {
-    margin-left: 51%;
   }
 }
 /* Base Styles
@@ -173,10 +234,10 @@ html {
 body {
   font-size: 1.5em;
   /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
+  line-height: 1.3;
   font-weight: 400;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222;
+  color: #333;
 }
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -259,12 +320,12 @@ button {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555555;
+  color: #666666;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
   line-height: 38px;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
@@ -274,18 +335,18 @@ button {
   cursor: pointer;
   box-sizing: border-box;
 }
-input[type="submit"],
+input[type="button"],
 input[type="reset"],
-input[type="button"] {
+input[type="submit"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555555;
+  color: #666666;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
   line-height: 38px;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
@@ -297,28 +358,28 @@ input[type="button"] {
 }
 .button:hover,
 button:hover {
-  color: #333;
-  border-color: #888888;
+  color: #444;
+  border-color: #999999;
   outline: 0;
 }
-input[type="submit"]:hover,
+input[type="button"]:hover,
 input[type="reset"]:hover,
-input[type="button"]:hover {
-  color: #333;
-  border-color: #888888;
+input[type="submit"]:hover {
+  color: #444;
+  border-color: #999999;
   outline: 0;
 }
 .button:focus,
 button:focus {
-  color: #333;
-  border-color: #888888;
+  color: #444;
+  border-color: #999999;
   outline: 0;
 }
-input[type="submit"]:focus,
+input[type="button"]:focus,
 input[type="reset"]:focus,
-input[type="button"]:focus {
-  color: #333;
-  border-color: #888888;
+input[type="submit"]:focus {
+  color: #444;
+  border-color: #999999;
   outline: 0;
 }
 .button.button-primary,
@@ -327,9 +388,9 @@ button.button-primary {
   background-color: #33c3f0;
   border-color: #33c3f0;
 }
-input[type="submit"].button-primary,
+input[type="button"].button-primary,
 input[type="reset"].button-primary,
-input[type="button"].button-primary {
+input[type="submit"].button-primary {
   color: #fff;
   background-color: #33c3f0;
   border-color: #33c3f0;
@@ -340,9 +401,9 @@ button.button-primary:hover {
   background-color: #1eaedb;
   border-color: #1eaedb;
 }
-input[type="submit"].button-primary:hover,
+input[type="button"].button-primary:hover,
 input[type="reset"].button-primary:hover,
-input[type="button"].button-primary:hover {
+input[type="submit"].button-primary:hover {
   color: #fff;
   background-color: #1eaedb;
   border-color: #1eaedb;
@@ -353,20 +414,20 @@ button.button-primary:focus {
   background-color: #1eaedb;
   border-color: #1eaedb;
 }
-input[type="submit"].button-primary:focus,
+input[type="button"].button-primary:focus,
 input[type="reset"].button-primary:focus,
-input[type="button"].button-primary:focus {
+input[type="submit"].button-primary:focus {
   color: #fff;
   background-color: #1eaedb;
   border-color: #1eaedb;
 }
 input[type="email"],
 input[type="number"],
+input[type="password"],
 input[type="search"],
-input[type="text"],
 input[type="tel"],
-input[type="url"],
-input[type="password"] {
+input[type="text"],
+input[type="url"] {
   height: 38px;
   padding: 6px 10px;
   background-color: #fff;
@@ -377,8 +438,8 @@ input[type="password"] {
 }
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-textarea,
-select {
+select,
+textarea {
   height: 38px;
   padding: 6px 10px;
   /* The 6px vertically centers text on FF, ignored by Webkit */
@@ -391,11 +452,11 @@ select {
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
 input[type="number"],
+input[type="password"],
 input[type="search"],
-input[type="text"],
 input[type="tel"],
-input[type="url"],
-input[type="password"] {
+input[type="text"],
+input[type="url"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -410,23 +471,23 @@ textarea {
 }
 input[type="email"]:focus,
 input[type="number"]:focus,
+input[type="password"]:focus,
 input[type="search"]:focus,
-input[type="text"]:focus,
 input[type="tel"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus {
+input[type="text"]:focus,
+input[type="url"]:focus {
   border: 1px solid #33c3f0;
   outline: 0;
 }
-textarea:focus,
-select:focus {
+select:focus,
+textarea:focus {
   border: 1px solid #33c3f0;
   outline: 0;
 }
 label,
 legend {
   display: block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-weight: 600;
 }
 fieldset {
@@ -439,7 +500,7 @@ input[type="radio"] {
 }
 label > .label-body {
   display: inline-block;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   font-weight: normal;
 }
 /* Lists
@@ -456,8 +517,8 @@ ul {
   padding-left: 0;
   margin-top: 0;
 }
-ul ul,
-ul ol {
+ul ol,
+ul ul {
   margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%;
 }
@@ -472,8 +533,8 @@ li {
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 code {
-  padding: .2rem .5rem;
-  margin: 0 .2rem;
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.2rem;
   font-size: 90%;
   white-space: nowrap;
   background: #f1f1f1;
@@ -487,41 +548,41 @@ pre > code {
 }
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-th,
-td {
+td,
+th {
   padding: 12px 15px;
   text-align: left;
   border-bottom: 1px solid #e1e1e1;
 }
-th:first-child,
-td:first-child {
+td:first-child,
+th:first-child {
   padding-left: 0;
 }
-th:last-child,
-td:last-child {
+td:last-child,
+th:last-child {
   padding-right: 0;
 }
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-button,
-.button {
+.button,
+button {
   margin-bottom: 1rem;
 }
+fieldset,
 input,
-textarea,
 select,
-fieldset {
+textarea {
   margin-bottom: 1.5rem;
 }
-pre,
 blockquote,
 dl,
 figure,
-table,
-p,
-ul,
+form,
 ol,
-form {
+p,
+pre,
+table,
+ul {
   margin-bottom: 2.5rem;
 }
 /* Utilities

@@ -11,8 +11,12 @@
     <title>EzoCSS Trystyle</title>
 
     <style media="screen">
-        #grid-demo .column,
-        #grid-demo .columns {
+        #grid-demo .ezo-col-1, #grid-demo .ezo-col-2, #grid-demo .ezo-col-3,
+        #grid-demo .ezo-col-4, #grid-demo .ezo-col-5, #grid-demo .ezo-col-6,
+        #grid-demo .ezo-col-7, #grid-demo .ezo-col-8, #grid-demo .ezo-col-9,
+        #grid-demo .ezo-col-10, #grid-demo .ezo-col-11, #grid-demo .ezo-col-12,
+        #grid-demo .ezo-col-1-3, #grid-demo .ezo-col-2-3, #grid-demo .ezo-col-3-3,
+        #grid-demo .ezo-col-1-2, #grid-demo .ezo-col-2-2 {
             text-align: center;
             background: #DDD;
             border-radius: 2px;
@@ -28,29 +32,38 @@
     <div id="grid-demo" class="container">
         <h2>Grid</h2>
         <div class="row">
-            <div class="one column">One</div>
-            <div class="eleven columns">Eleven</div>
+            <div class="ezo-col-1">1</div>
+            <div class="ezo-col-11">11</div>
         </div>
 
         <div class="row">
-            <div class="two columns">Two</div>
-            <div class="ten columns">Ten</div>
+            <div class="ezo-col-2">2</div>
+            <div class="ezo-col-10">10</div>
         </div>
 
         <div class="row">
-            <div class="three columns">Three</div>
-            <div class="four columns">Four</div>
-            <div class="five columns">Five</div>
+            <div class="ezo-col-3">3</div>
+            <div class="ezo-col-4">4</div>
+            <div class="ezo-col-5">5</div>
         </div>
 
         <div class="row">
-            <div class="one-third column">1/3</div>
-            <div class="two-thirds column">2/3</div>
+            <div class="ezo-col-1-3">1/3</div>
+            <div class="ezo-col-2-3">2/3</div>
         </div>
 
         <div class="row">
-            <div class="one-half column">1/2</div>
-            <div class="one-half column">1/2</div>
+            <div class="ezo-col-1-2">1/2</div>
+            <div class="ezo-col-1-2">1/2</div>
+        </div>
+
+        <div class="row">
+            <div class="ezo-col-1">1</div>
+            <div class="ezo-col-o-6 ezo-col-5">5</div>
+        </div>
+        <div class="row">
+            <div class="ezo-col-o-2 ezo-col-4">4</div>
+            <div class="ezo-col-o-3 ezo-col-3">3</div>
         </div>
     </div>
 
@@ -58,7 +71,7 @@
         <hr />
         <h2>Typography</h2>
         <div class="row">
-            <div class="one-half column">
+            <div class="ezo-col-6">
                 <h1>Title 1</h1>
                 <h2>Title 2</h2>
                 <h3>Title 3</h3>
@@ -66,7 +79,7 @@
                 <h5>Title 5</h5>
                 <h6>Title 6</h6>
             </div>
-            <div class="one-half column">
+            <div class="ezo-col-1-2">
                 <p><b>This is a paragraph.</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto blanditiis, explicabo cum nobis voluptate doloremque iste perspiciatis aperiam commodi quis dignissimos esse consequuntur, asperiores sed quo nulla
                     eveniet alias dolorum molestias qui! Dolorem, nemo, ullam!</p>
                 <p>You can use the mark tag to <mark>highlight</mark> text.</p>
@@ -96,17 +109,17 @@
 
         <form>
             <div class="row">
-                <div class="six columns">
+                <div class="ezo-col-1-2">
                     <label for="example-text-input" class="col-2 col-form-label">Text</label>
                     <input class="u-full-width" type="text" value="Artisanal kale" id="example-text-input">
                 </div>
-                <div class="six columns">
+                <div class="ezo-col-1-2">
                     <label for="exampleTextarea">Example textarea</label>
                     <textarea class="u-full-width" id="exampleTextarea" rows="3"></textarea>
                 </div>
             </div>
             <div class="row">
-                <div class="six columns">
+                <div class="ezo-col-1-2">
                     <label for="exampleSelect1">Example select</label>
                     <select class="u-full-width" id="exampleSelect1">
             				<option>1</option>
@@ -116,7 +129,7 @@
             				<option>5</option>
             			</select>
                 </div>
-                <div class="six columns">
+                <div class="ezo-col-1-2">
                     <label for="exampleSelect2">Example multiple select</label>
                     <select multiple class="u-full-width" id="exampleSelect2">
             				<option>1</option>
@@ -128,12 +141,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="six columns">
+                <div class="ezo-col-1-2">
                     <label for="exampleInputFile">File input</label>
                     <input type="file" class="u-full-width" id="exampleInputFile" aria-describedby="fileHelp">
                     <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
                 </div>
-                <div class="six columns">
+                <div class="ezo-col-1-2">
                     <legend>Radio buttons</legend>
                     <div class="form-check">
                         <label>
@@ -156,61 +169,61 @@
                 </div>
             </div>
             <div class="row">
-                <div class="six columns">
+                <div class="ezo-col-1-2">
                     <label for="example-search-input" class="col-2 col-form-label">Search</label>
                     <input class="u-full-width" type="search" value="How do I shoot web" id="example-search-input">
                 </div>
-                <div class="six columns">
+                <div class="ezo-col-1-2">
                     <label for="example-email-input" class="col-2 col-form-label">Email</label>
                     <input class="u-full-width" type="email" value="bootstrap@example.com" id="example-email-input">
                 </div>
             </div>
             <div class="row">
-                <div class="six columns">
+                <div class="ezo-col-1-2">
                     <label for="example-url-input" class="col-2 col-form-label">URL</label>
                     <input class="u-full-width" type="url" value="https://getbootstrap.com" id="example-url-input">
                 </div>
-                <div class="six columns">
+                <div class="ezo-col-1-2">
                     <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
                     <input class="u-full-width" type="tel" value="1-(555)-555-5555" id="example-tel-input">
                 </div>
             </div>
             <div class="row">
-                <div class="six columns">
+                <div class="ezo-col-1-2">
                     <label for="example-password-input" class="col-2 col-form-label">Password</label>
                     <input class="u-full-width" type="password" value="hunter2" id="example-password-input">
                 </div>
-                <div class="six columns">
+                <div class="ezo-col-1-2">
                     <label for="example-number-input" class="col-2 col-form-label">Number</label>
                     <input class="u-full-width" type="number" value="42" id="example-number-input">
                 </div>
             </div>
             <div class="row">
-                <div class="six columns">
+                <div class="ezo-col-1-2">
                     <label for="example-datetime-local-input" class="col-2 col-form-label">Date and time</label>
                     <input class="u-full-width" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
                 </div>
-                <div class="six columns">
+                <div class="ezo-col-1-2">
                     <label for="example-date-input" class="col-2 col-form-label">Date</label>
                     <input class="u-full-width" type="date" value="2011-08-19" id="example-date-input">
                 </div>
             </div>
             <div class="row">
-                <div class="six columns">
+                <div class="ezo-col-1-2">
                     <label for="example-month-input" class="col-2 col-form-label">Month</label>
                     <input class="u-full-width" type="month" value="2011-08" id="example-month-input">
                 </div>
-                <div class="six columns">
+                <div class="ezo-col-1-2">
                     <label for="example-week-input" class="col-2 col-form-label">Week</label>
                     <input class="u-full-width" type="week" value="2011-W33" id="example-week-input">
                 </div>
             </div>
             <div class="row">
-                <div class="six columns">
+                <div class="ezo-col-1-2">
                     <label for="example-time-input" class="col-2 col-form-label">Time</label>
                     <input class="u-full-width" type="time" value="13:45:00" id="example-time-input">
                 </div>
-                <div class="six columns">
+                <div class="ezo-col-1-2">
                     <label for="example-color-input" class="col-2 col-form-label">Color</label>
                     <input class="u-full-width" type="color" value="#563d7c" id="example-color-input">
                 </div>
@@ -223,7 +236,7 @@
         <hr>
         <h2>Lists</h2>
         <div class="row">
-            <div class="six columns">
+            <div class="ezo-col-1-2">
                 <ul>
                     <li>Lorem ipsum dolor sit amet</li>
                     <li>Consectetur adipiscing elit</li>
@@ -242,7 +255,7 @@
                     <li>Eget porttitor lorem</li>
                 </ul>
             </div>
-            <div class="six columns">
+            <div class="ezo-col-1-2">
                 <ol>
                     <li>Lorem ipsum dolor sit amet</li>
                     <li>Consectetur adipiscing elit</li>
